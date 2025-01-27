@@ -2,6 +2,7 @@
 
 ### 本地测试环境搭建
 
+```
 docker network create \
   --driver=bridge \
   --subnet=192.168.50.0/24 \
@@ -31,6 +32,7 @@ docker run -d --name dashboard \
   --network apisix \
   -v `pwd`/conf.yaml:/usr/local/apisix-dashboard/conf/conf.yaml \
   apache/apisix-dashboard
+```
 
 ### 面板配置文件
 
